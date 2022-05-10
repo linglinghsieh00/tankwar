@@ -51,8 +51,7 @@ Compilation Guide
 7. Open terminal 1 and enter "export DISPLAY=:0.0"
 8. Enter "./project_1_4_30" for execution.
 
-Done in the project
--------------------------
+
 basic requirements
 -------------------------
 1.Show 
