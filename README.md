@@ -52,9 +52,9 @@ Compilation Guide
 8. Enter "./project_1_4_30" for execution.
 
 Done in the project
-
---------------------------------------
-basic requirements:
+-------------------------
+basic requirements
+-------------------------
 1.Show 
 • Our tank
 • Enemy tank
