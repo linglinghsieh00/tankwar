@@ -1,0 +1,32 @@
+分工:
+  1.設計遊戲時讓使用者選擇單人或雙人模式或是創建地圖
+  2.進入遊戲後顯示血量以及敵人剩餘數等資訊
+  3.結束一關遊戲結束後接著第二關的機制
+  
+
+設計思路
+-----------------------
+1.類的設計
+  共設計4個類
+  mainwindow:主窗口
+  you_lose:輸畫面
+  you_pass_the game:通關所有關卡畫面
+  tipwindow:通關畫面
+  
+  類的聲明
+  mainwindow.h:
+    1.主畫面的設置:
+    battle city 使用 QPushButton 創建,但由於無連結任何函數所以按也不會有反應
+    透過創建按鈕來讓使用者選擇要 1 player/2 players/continue/map_editor 透過connect()連結槽函數並執行槽函數 on_pushButton_clicked()/on_pushButton_2_clicked
+    槽函數 on_pushButton_clicked()/on_pushButton_2_clicked 連接 initscene() 初始化地圖和 playGame() 開始遊戲 , 將stage設置為1, mode 設置為 1 or 2
+    
+    2.scoreboard:
+    透過 painter.drawPixmap 創建記分板灰色背景
+    透過 painter.drawText 創建 "Enemies left:" "Player 1 HP" "stage" "mode" 等資訊
+    
+    3.結束一關遊戲結束後接著第二關的機制:
+    
+    
+    
+    tipwindow
+  
